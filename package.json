@@ -4,7 +4,7 @@
     "url": "git@github.com:Chadtao206/mongoose-restapi-starter.git"
   },
   "private": false,
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "",
   "main": "index.js",
   "bin": "./bin.js",
@@ -12,8 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch",
     "minor": "npm version minor",
-    "major": "npm version major",
-    "publish": "npm publish --access public"
+    "major": "npm version major"
   },
   "keywords": [],
   "author": "",

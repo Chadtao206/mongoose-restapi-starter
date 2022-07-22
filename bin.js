@@ -16,7 +16,7 @@ prompt({
 
   console.log("✨✨✨ I GOT YOU FAM! ✨✨✨");
   console.log("Generating your files...");
-  //   fs.writeFileSync("./package.json", lib.packageJSON);
+  fs.writeFileSync("./package.json", lib.packageJSON);
   fs.writeFileSync("./.gitignore", lib.gitIgnore);
   fs.writeFileSync("./server.js", lib.server);
 
