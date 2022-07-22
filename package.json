@@ -1,0 +1,17 @@
+{
+  "name": "@chadtao/mongoose-restapi-starter",
+  "repository": {
+    "url": "git@github.com:Chadtao206/mongoose-restapi-starter.git"
+  },
+  "private": false,
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "bin": "./bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
