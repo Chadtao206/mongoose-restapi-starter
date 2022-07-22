@@ -1,1 +1,5 @@
-module.exports = 42
+module.exports = {
+  meaningOfLife() {
+    return 42;
+  },
+};

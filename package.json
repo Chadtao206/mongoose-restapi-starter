@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch",
     "minor": "npm version minor",
-    "major": "npm version major"
+    "major": "npm version major",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "",
