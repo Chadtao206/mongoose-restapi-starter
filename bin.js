@@ -32,6 +32,7 @@ prompt({
   fs.writeFileSync("./models/User.js", lib.userModel);
 
   fs.writeFileSync("./routes/index.js", lib.routesIndex);
+  fs.writeFileSync("./routes/api/index.js", lib.apiRoutesIndex);
   fs.writeFileSync("./routes/api/thought-routes.js", lib.thoughtRoutes);
   fs.writeFileSync("./routes/api/user-routes.js", lib.userRoutes);
 
