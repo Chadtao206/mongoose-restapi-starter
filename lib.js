@@ -65,7 +65,7 @@ module.exports = { User, Thought, Reaction };
 `;
 
 const reactionModel = `
-const { Schema, Types } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
 
 const reactionSchema = new Schema(
   {
