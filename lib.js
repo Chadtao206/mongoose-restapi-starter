@@ -95,7 +95,9 @@ const reactionSchema = new Schema(
   }
 );
 
-module.exports = reactionSchema;
+const Reaction = model('Reaction', reactionSchema)
+
+module.exports = Reaction;
 `;
 
 const thoughtModel = `
@@ -118,7 +120,10 @@ const thoughtSchema = new Schema(
       type: String,
       required: true
     },
-    reactions: [reactionSchema]
+    reactions: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Reaction',
+    }],
   },
   {
     toJSON: {
