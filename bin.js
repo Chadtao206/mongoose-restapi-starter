@@ -40,6 +40,7 @@ prompt({
   setTimeout(() => {
     execSync("npm install");
     console.log("💩 All done! enjoy! 💩");
+    console.log("type 'nodemon' to start your application!")
     process.exit();
   }, 2000);
 });
