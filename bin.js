@@ -26,16 +26,16 @@ const main = async () => {
   });
 
   console.log("✨✨✨ I GOT YOU FAM! ✨✨✨");
-  console.log("Generating your files...");
-
+  const spinner = ora("Generating your files...").start();
   const { directories, files, message } = lib[homework];
   directories.forEach((d) => mkdirSync(d, { recursive: true }));
   files.forEach((f) => writeFileSync(f.path, f.content));
-
-  console.log("All your files have been created, installing dependencies...");
+  spinner.color = "yellow";
+  spinner.text = "All your files have been created, installing dependencies...";
   setTimeout(() => {
     execSync("npm install");
-    console.log(message);
+    spinner.color = "green";
+    spinner.text = message;
     process.exit();
   }, 1000);
 };
