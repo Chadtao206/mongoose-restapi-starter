@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-const { prompt } = require("inquirer");
-const { writeFileSync, mkdirSync } = require("fs");
-const { execSync } = require("child_process");
-const lib = require("./lib");
+import inquirer from "inquirer";
+import ora from "ora";
+import { writeFileSync, mkdirSync } from "fs";
+import { execSync } from "child_process";
+import lib from "./lib/index.js";
 
 const main = async () => {
-  const { wantHelp } = await prompt({
+  const { wantHelp } = await inquirer.prompt({
     message:
       "Welcome to bootcamp homework starter, would you like some assistance with your homework?",
     type: "confirm",
@@ -17,7 +18,7 @@ const main = async () => {
     process.exit();
   }
 
-  const { homework } = await prompt({
+  const { homework } = await inquirer.prompt({
     message: "What homework would you like to start?",
     type: "list",
     name: "homework",

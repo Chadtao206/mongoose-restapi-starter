@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   meaningOfLife() {
     return 42;
   },
